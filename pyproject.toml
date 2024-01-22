@@ -1,0 +1,19 @@
+[project]
+name = "Sheep"
+version = "0.0.1"
+authors = [
+  { name="AtlasL", email="vtlvs.0@gmail.com" },
+]
+description = "Effective notebooking with Sheep."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Repository = "https://github.com/AtlasL1/Sheep"
+Issues = "https://github.com/AtlasL1/Sheep/issues"
+Discord = "https://discord.gg/TkT5BPkZJG"
