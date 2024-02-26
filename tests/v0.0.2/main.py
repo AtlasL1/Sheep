@@ -1,3 +1,4 @@
+# pip install -i https://test.pypi.org/simple/ Sheep==0.0.2
 from sheep import page
 page.create()
 page.set_title('hi')
