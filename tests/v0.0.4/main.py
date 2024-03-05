@@ -1,15 +1,15 @@
-# pip install -i https://test.pypi.org/simple/ Sheep==0.0.3
+# pip install -i https://test.pypi.org/simple/ Sheep==0.0.4
 from sheep import page
 page.create()
 page.set_title('sheep??????')
 page.set_icon('https://i.pinimg.com/564x/66/a0/6d/66a06d5f33a803738c7747618c94e4d8.jpg')
 page.set_background(image='https://i.pinimg.com/736x/cf/92/99/cf9299fb011122c844c904e66c0833cf.jpg', image_repeat=False, image_size='cover')
 page.add_font(src='http://fonts.googleapis.com/css?family=Roboto')
-page.write(language='zh', style='H1', content=f'This is the first Sheep site built with Sheep and atm it\'s horrible anyways check out the code', link_text='code', url='https://github.com/AtlasL1/Sheep', new_tab=True, size='29px', font='Roboto', colour='yellow')
+page.write(language='en', style='H1', content=f'This is the first Sheep site built with Sheep and atm it\'s horrible anyways check out the code', link_text='code', url='https://github.com/AtlasL1/Sheep', new_tab=True, size='29px', font='Roboto', colour='yellow')
 page.style_links(text_colour='yellow', hover_colour='orange', visited_colour='yellow', active_colour='')
 page.add_button(text='link to code again but it\'s a button this time', onclick='alert(\'hideous repo with hideous code incoming\')', border='none', border_after='none', text_decoration='underline', text_decoration_style='wavy', text_decoration_thickness='2px', text_decoration_colour='orange', background_colour='yellow', text_decoration_after='underline', text_decoration_colour_after='yellow', text_decoration_style_after='wavy', text_decoration_thickness_after='2px', background_colour_after='orange', url='https://github.com/AtlasL1/Sheep', new_tab=True)
 page.line_break(number='1')
 page.add_image(path='https://i.pinimg.com/564x/d3/75/4d/d3754dadeed8a28dea4a423cc75b9cc7.jpg', alt_text='Closeup Sheep')
-page.write(language='zh', style='H2', content=f'The picture below is linked to the code (again)', font='Roboto', colour='yellow')
+page.write(language='en', style='H2', content=f'The picture below is linked to the code (again)', font='Roboto', colour='yellow')
 page.add_image(path='https://i.pinimg.com/564x/15/b0/f6/15b0f611bec878d513512c28cc9e3e7b.jpg', url='https://github.com/AtlasL1/Sheep', new_tab=True)
 page.view_page()
