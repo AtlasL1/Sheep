@@ -4,4 +4,4 @@ database:
 
 logging:
   level: info
-  file_path: /var/log/architech.log
+  file_path: /var/log/sheep.log
