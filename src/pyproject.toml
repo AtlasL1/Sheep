@@ -1,6 +1,6 @@
 [project]
-name = "Sheep"
-version = "0.0.7"
+name = "sheep"
+version = "0.0.8"
 authors = [
   { name="AtlasL", email="vtlvs.0@gmail.com" },
 ]
@@ -9,7 +9,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Eclipse License",
+    "License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)",
     "Operating System :: OS Independent",
 ]
 
