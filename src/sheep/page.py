@@ -231,6 +231,16 @@ def add_blocked_text(text_style='P', text_size='12px', block_thickness='1px', bl
         else:
             raise ValueError('Unknown text style.')
 
+def add_header(background_colour='silver', padding='30px', text_align='center', font='Times New Roman', font_size='35px', text_colour='black', text='DEFAULT TEXT'):
+    text_aligns = ['left', 'center', 'right']
+    global global_file_name
+    if global_file_name is None:
+        raise ValueError('File not found.')
+    else:
+        if text_align in text_aligns:
+            with open(f'{global_file_name}.html', 'a') as file:
+                file.write(f'<head>\n<style>\nheader {{\nbackground-color: {background_colour};\npadding: {padding};\ntext-align: {text_align};\nfont-size: {font_size};\ncolor: {text_colour}\n;\nfont-family:{font};\n}};\n</style>\n</head>\n<body>\n<header>\n{text}\n</header>\n</body>\n')
+
 def view_page():
     global global_file_name
     if global_file_name is None:
@@ -238,4 +248,3 @@ def view_page():
     else:
         file_path = f'{global_file_name}.html'
         webbrowser.open(file_path, new=2)
-        
